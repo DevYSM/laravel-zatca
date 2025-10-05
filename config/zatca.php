@@ -50,4 +50,12 @@ return [
     'certificate_path' => storage_path('app/zatca/certificate.txt'),
     'private_key_path' => storage_path('app/zatca/private_key.pem'),
     'secret_path' => storage_path('app/zatca/secret.txt'),
+
+    'test_mode_certificate' => [
+        'reporting' => [
+            'username' => env('ZATCA_TEST_MODE_REPORTING_USERNAME'),
+            'password' => env('ZATCA_TEST_MODE_REPORTING_PASSWORD'),
+        ]
+    ]
+
 ];

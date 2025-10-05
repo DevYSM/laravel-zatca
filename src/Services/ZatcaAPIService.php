@@ -153,6 +153,12 @@ class ZatcaAPIService
         $encodedInvoice = base64_encode($signedInvoice);
         $encodedHash = base64_encode($invoiceHash);
 
+        // Use test mode certificate for simulation environment
+        if (config('zatca.environment') === 'simulation') {
+            $certificate = config('zatca.test_mode_certificate.reporting.username');
+            $secret = config('zatca.test_mode_certificate.reporting.password');
+        }
+
         $response = Http::withHeaders([
             'Accept' => 'application/json',
             'Accept-Language' => 'en',
