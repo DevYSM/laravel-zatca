@@ -235,7 +235,3 @@ MIT License
 
 Built with ❤️ by YR-Group <a href="https://yassensayed.com/">Yassen Sayed</a> & <a href="https://ramadanewais.com">
 Ramadan Ewis</a>.
- 
-# laravel-zatca
-# laravel-zatca
-# laravel-zatca
