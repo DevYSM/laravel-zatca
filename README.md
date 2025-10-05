@@ -171,6 +171,16 @@ file_put_contents(storage_path('app/zatca/prod_certificate.txt'), $result['binar
 file_put_contents(storage_path('app/zatca/prod_secret.txt'), $result['secret']);
 ```
 
+## Test Mode Username & Password
+
+```
+ZATCA_TEST_MODE_REPORTING_USERNAME
+ZATCA_TEST_MODE_REPORTING_PASSWORD
+```
+
+You can get the username and password from the ZATCA portal.
+https://sandbox.zatca.gov.sa/IntegrationSandbox/preInvoice-api
+
 ## API Reference
 
 ### ZatcaPhaseOneService
