@@ -41,7 +41,7 @@ ZATCA_VERSION=1.0.0
 Generate simple QR codes for invoices (for Phase 1 compliance):
 
 ```php
-use BrandMeOn\LaravelZatca\Facades\Zatca;
+use YrGroup\LaravelZatca\Facades\Zatca;
 
 // Generate QR code
 $qrCode = Zatca::phaseOne()
@@ -67,7 +67,7 @@ $qrCodeBase64 = Zatca::phaseOne()
 #### Step 1: Generate CSR (Certificate Signing Request)
 
 ```php
-use BrandMeOn\LaravelZatca\Facades\Zatca;
+use YrGroup\LaravelZatca\Facades\Zatca;
 
 $merchantData = [
     'vat_number' => '310461435700003',
